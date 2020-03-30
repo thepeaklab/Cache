@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.1
 
 import PackageDescription
 
@@ -13,11 +13,12 @@ let package = Package(
     targets: [
         .target(
             name: "Cache",
-            path: "Source/Shared",
+            path: "Source",
             exclude: ["Library/ImageWrapper.swift"]), // relative to the target path
         .testTarget(
             name: "CacheTests",
             dependencies: ["Cache"],
             path: "Tests"),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

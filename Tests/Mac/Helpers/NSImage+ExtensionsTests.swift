@@ -1,3 +1,6 @@
+
+#if canImport(Cocoa)
+
 import Cocoa
 @testable import Cache
 
@@ -14,3 +17,5 @@ extension NSImage {
       .representation(using: imageFileType, properties: [:])!
   }
 }
+
+#endif

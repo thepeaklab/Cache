@@ -1,6 +1,7 @@
 import Foundation
 
 public class TransformerFactory {
+
   public static func forData() -> Transformer<Data> {
     let toData: (Data) throws -> Data = { $0 }
 
@@ -35,4 +36,5 @@ public class TransformerFactory {
 
     return Transformer<U>(toData: toData, fromData: fromData)
   }
+    
 }
