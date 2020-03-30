@@ -17,4 +17,5 @@ public struct MemoryConfig {
     self.countLimit = countLimit
     self.totalCostLimit = totalCostLimit
   }
+
 }
