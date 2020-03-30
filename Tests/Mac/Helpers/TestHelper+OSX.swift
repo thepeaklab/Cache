@@ -1,3 +1,5 @@
+#if canImport(Cocoa)
+
 import Cocoa
 
 extension TestHelper {
@@ -9,3 +11,5 @@ extension TestHelper {
     return image
   }
 }
+
+#endif

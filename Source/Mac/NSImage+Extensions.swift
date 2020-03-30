@@ -1,8 +1,6 @@
 #if canImport(AppKit)
 import AppKit
-#endif
 
-#if os(OSX)
 /// Helper UIImage extension.
 extension NSImage {
   /// Checks if image has alpha component
